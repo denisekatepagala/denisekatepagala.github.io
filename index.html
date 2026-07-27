@@ -1,439 +1,430 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Denise Kate Pagala | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<title>Denise Kate Pagala | Portfolio</title>
 
-    <!-- Icons -->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f7f7f7;
+    color:#222;
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    background:white;
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+    z-index:100;
+}
+
+nav h2{
+    color:#5b5ef7;
+}
+
+nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#5b5ef7;
+}
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 10%;
+}
+
+.hero-text{
+    width:55%;
+}
+
+.hero-text h1{
+    font-size:55px;
+    margin-bottom:10px;
+}
+
+.hero-text h2{
+    color:#5b5ef7;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    line-height:1.8;
+    color:#555;
+}
+
+.hero img{
+    width:350px;
+    border-radius:50%;
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+}
+
+button{
+    margin-top:30px;
+    padding:15px 35px;
+    border:none;
+    background:#5b5ef7;
+    color:white;
+    border-radius:40px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#4246dd;
+}
+
+section{
+
+    padding:100px 10%;
+
+}
+
+.title{
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+}
+
+.card{
+
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.skills{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+
+}
+
+.skill{
+
+padding:20px;
+background:white;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.projects{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+
+}
+
+.project{
+
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.project h3{
+margin-bottom:15px;
+}
+
+.project p{
+
+color:#555;
+line-height:1.7;
+
+}
+
+.project a{
+
+display:inline-block;
+margin-top:20px;
+text-decoration:none;
+color:#5b5ef7;
+font-weight:600;
+
+}
+
+.contact{
+
+text-align:center;
+
+}
+
+footer{
+
+padding:40px;
+text-align:center;
+background:white;
+margin-top:60px;
+
+}
+
+@media(max-width:900px){
+
+.hero{
+
+flex-direction:column-reverse;
+justify-content:center;
+text-align:center;
+gap:50px;
+
+}
+
+.hero-text{
+
+width:100%;
+
+}
+
+.hero img{
+
+width:250px;
+
+}
+
+.about{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
+<nav>
 
-<header>
-
-<nav class="navbar">
-
-    <h2 class="logo">DK.</h2>
-
-    <ul class="nav-links">
-
-        <li><a href="#home">Home</a></li>
-
-        <li><a href="#about">About</a></li>
-
-        <li><a href="#skills">Skills</a></li>
-
-        <li><a href="#projects">Projects</a></li>
-
-        <li><a href="#contact">Contact</a></li>
-
-    </ul>
-
-    <button id="themeToggle">
-        <i class="fa-solid fa-moon"></i>
-    </button>
-
-</nav>
-
-</header>
-
-<!-- ================= HERO ================= -->
-
-<section id="home" class="hero">
-
-<div class="hero-left">
-
-    <p class="greeting">
-        Hello, I'm
-    </p>
-
-    <h1>
-        Denise Kate
-        <span>Pagala</span>
-    </h1>
-
-    <h3>
-        Computer Engineering Student
-    </h3>
-
-    <p class="hero-description">
-
-        Passionate about creating beautiful user interfaces,
-        developing software with Python,
-        and exploring Machine Learning.
-
-        I love turning ideas into applications that solve
-        real-world problems.
-
-    </p>
-
-    <div class="hero-buttons">
-
-        <a href="#projects" class="btn primary">
-
-            View Projects
-
-        </a>
-
-        <a href="#" class="btn secondary">
-
-            Download Resume
-
-        </a>
-
-    </div>
-
-</div>
-
-<div class="hero-right">
-
-    <div class="profile-card">
-
-        <img src="profile.png"
-        alt="Profile Picture">
-
-    </div>
-
-</div>
-
-</section>
-
-<!-- ================= ABOUT ================= -->
-
-<section id="about">
-
-<h2 class="section-title">
-
-About Me
-
-</h2>
-
-<div class="about-container">
-
-<div class="about-card">
-
-<h3>
-
-Who Am I?
-
-</h3>
-
-<p>
-
-I'm currently studying
-Bachelor of Science in Computer Engineering
-at Mapúa University.
-
-I'm continuously improving my skills in
-
-Python,
-
-Web Development,
-
-Machine Learning,
-
-and UI Design.
-
-My goal is to become
-a Software Engineer
-who builds useful and intuitive applications.
-
-</p>
-
-</div>
-
-<div class="about-card">
-
-<h3>
-
-Education
-
-</h3>
-
-<p>
-
-🎓 Mapúa University
-
-<br><br>
-
-Bachelor of Science
-
-Computer Engineering
-
-</p>
-
-</div>
-
-<div class="about-card">
-
-<h3>
-
-Interests
-
-</h3>
+<h2>DK.</h2>
 
 <ul>
 
-<li>Python Development</li>
-
-<li>Frontend Design</li>
-
-<li>Machine Learning</li>
-
-<li>Data Analysis</li>
-
-<li>Artificial Intelligence</li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
 
 </ul>
 
-</div>
+</nav>
 
-</div>
+<section class="hero">
 
-</section>
+<div class="hero-text">
 
-<!-- ================= SKILLS ================= -->
+<h1>Hi, I'm Denise Kate 👋</h1>
 
-<section id="skills">
-
-<h2 class="section-title">
-
-Skills
-
-</h2>
-
-<div class="skills-grid">
-
-<div class="skill-card">
-
-<i class="fa-brands fa-python"></i>
-
-<h3>Python</h3>
-
-</div>
-
-<div class="skill-card">
-
-<i class="fa-brands fa-html5"></i>
-
-<h3>HTML</h3>
-
-</div>
-
-<div class="skill-card">
-
-<i class="fa-brands fa-css3-alt"></i>
-
-<h3>CSS</h3>
-
-</div>
-
-<div class="skill-card">
-
-<i class="fa-brands fa-js"></i>
-
-<h3>JavaScript</h3>
-
-</div>
-
-<div class="skill-card">
-
-<i class="fa-solid fa-database"></i>
-
-<h3>SQL</h3>
-
-</div>
-
-<div class="skill-card">
-
-<i class="fa-brands fa-git-alt"></i>
-
-<h3>Git</h3>
-
-</div>
-
-<div class="skill-card">
-
-<i class="fa-brands fa-github"></i>
-
-<h3>GitHub</h3>
-
-</div>
-
-<div class="skill-card">
-
-<i class="fa-solid fa-brain"></i>
-
-<h3>TensorFlow</h3>
-
-</div>
-
-<div class="skill-card">
-
-<i class="fa-solid fa-desktop"></i>
-
-<h3>CustomTkinter</h3>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= PROJECTS ================= -->
-
-<section id="projects">
-
-<h2 class="section-title">
-
-Projects
-
-</h2>
-
-<div class="projects-grid">
-
-<!-- Project -->
-
-<div class="project-card">
-
-<div class="project-icon">
-
-📘
-
-</div>
-
-<h3>
-
-Grade Calculator
-
-</h3>
+<h2>Computer Engineering Student</h2>
 
 <p>
 
-A desktop application built using
-Python and CustomTkinter
-that computes GWA,
-manages school terms,
+I'm a Computer Engineering student passionate about software development,
+UI design, and machine learning. I enjoy building practical applications
+that solve real-world problems while continuously learning new technologies.
+
+</p>
+
+<a href="#projects">
+<button>View My Projects</button>
+</a>
+
+</div>
+
+<img src="profile.jpg" alt="Profile">
+
+</section>
+
+<section id="about">
+
+<h1 class="title">About Me</h1>
+
+<div class="about">
+
+<div class="card">
+
+<h3>Who I Am</h3>
+
+<br>
+
+<p>
+
+I'm currently studying Computer Engineering and continuously improving my
+skills in Python, web development, and software engineering.
+
+My goal is to become a software engineer who creates useful and intuitive
+applications.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Education</h3>
+
+<br>
+
+<p>
+
+🏫 Mapúa University
+
+<br><br>
+
+Bachelor of Science in Computer Engineering
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h1 class="title">Skills</h1>
+
+<div class="skills">
+
+<div class="skill">
+<h3>Python</h3>
+</div>
+
+<div class="skill">
+<h3>HTML</h3>
+</div>
+
+<div class="skill">
+<h3>CSS</h3>
+</div>
+
+<div class="skill">
+<h3>JavaScript</h3>
+</div>
+
+<div class="skill">
+<h3>Git & GitHub</h3>
+</div>
+
+<div class="skill">
+<h3>TensorFlow</h3>
+</div>
+
+<div class="skill">
+<h3>Machine Learning</h3>
+</div>
+
+<div class="skill">
+<h3>SQL</h3>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h1 class="title">Projects</h1>
+
+<div class="projects">
+
+<div class="project">
+
+<h3>Grade Calculator</h3>
+
+<p>
+
+Desktop application developed using Python and CustomTkinter
+that computes General Weighted Average (GWA), manages school terms,
 and stores data using JSON.
 
 </p>
 
-<div class="project-buttons">
-
-<a href="#">
-
-GitHub
-
-</a>
-
-<a href="#">
-
-Live Demo
-
-</a>
+<a href="#">GitHub →</a>
 
 </div>
 
-</div>
+<div class="project">
 
-<!-- Project -->
-
-<div class="project-card">
-
-<div class="project-icon">
-
-🌿
-
-</div>
-
-<h3>
-
-Plant Disease Detection
-
-</h3>
+<h3>Plant Disease Detection</h3>
 
 <p>
 
-A CNN-based image classification system
-developed using TensorFlow
-to detect plant diseases.
+Deep learning application using Convolutional Neural Networks (CNN)
+to classify plant diseases from leaf images.
 
 </p>
 
-<div class="project-buttons">
-
-<a href="#">
-
-GitHub
-
-</a>
-
-<a href="#">
-
-Paper
-
-</a>
+<a href="#">GitHub →</a>
 
 </div>
 
-</div>
+<div class="project">
 
-<!-- Project -->
-
-<div class="project-card">
-
-<div class="project-icon">
-
-⠿
-
-</div>
-
-<h3>
-
-OCR Braille Device
-
-</h3>
+<h3>Braille Learning Device</h3>
 
 <p>
 
-An assistive learning device using
-
-OCR,
-
-Raspberry Pi,
-
-Speech Synthesis,
-
-and Refreshable Braille.
+Research project using OCR, Raspberry Pi,
+speech synthesis, and a refreshable Braille display
+to assist visually impaired learners.
 
 </p>
 
-<div class="project-buttons">
-
-<a href="#">
-
-GitHub
-
-</a>
-
-<a href="#">
-
-Documentation
-
-</a>
-
-</div>
+<a href="#">GitHub →</a>
 
 </div>
 
@@ -441,91 +432,40 @@ Documentation
 
 </section>
 
-<!-- ================= CONTACT ================= -->
+<section id="contact" class="contact">
 
-<section id="contact">
-
-<h2 class="section-title">
-
-Let's Connect
-
-</h2>
-
-<div class="contact-container">
-
-<div class="contact-card">
-
-<i class="fa-solid fa-envelope"></i>
-
-<h3>Email</h3>
+<h1 class="title">Let's Connect</h1>
 
 <p>
+
+Email:
+<br><br>
 
 your@email.com
 
-</p>
+<br><br>
 
-</div>
+GitHub:
+<br>
 
-<div class="contact-card">
+https://github.com/yourusername
 
-<i class="fa-brands fa-github"></i>
+<br><br>
 
-<h3>GitHub</h3>
+LinkedIn:
+<br>
 
-<p>
-
-github.com/yourusername
-
-</p>
-
-</div>
-
-<div class="contact-card">
-
-<i class="fa-brands fa-linkedin"></i>
-
-<h3>LinkedIn</h3>
-
-<p>
-
-linkedin.com/in/yourusername
+https://linkedin.com/in/yourusername
 
 </p>
-
-</div>
-
-</div>
 
 </section>
 
-<!-- ================= FOOTER ================= -->
-
 <footer>
 
-<p>
-
-© 2026 Denise Kate Pagala
-
-</p>
-
-<p>
-
-Built with HTML, CSS & JavaScript 💙
-
-</p>
+Made with ❤️ by Denise Kate Pagala
 
 </footer>
-
-<!-- Floating Background -->
-
-<div class="circle circle1"></div>
-<div class="circle circle2"></div>
-<div class="circle circle3"></div>
-
-<!-- JS -->
-
-<script src="script.js"></script>
 
 </body>
 </html>
