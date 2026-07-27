@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Denise Kate Pagala | Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f7f7f7;
+    color:#222;
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    background:white;
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+    z-index:100;
+}
+
+nav h2{
+    color:#5b5ef7;
+}
+
+nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#5b5ef7;
+}
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 10%;
+}
+
+.hero-text{
+    width:55%;
+}
+
+.hero-text h1{
+    font-size:55px;
+    margin-bottom:10px;
+}
+
+.hero-text h2{
+    color:#5b5ef7;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    line-height:1.8;
+    color:#555;
+}
+
+.hero img{
+    width:350px;
+    border-radius:50%;
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+}
+
+button{
+    margin-top:30px;
+    padding:15px 35px;
+    border:none;
+    background:#5b5ef7;
+    color:white;
+    border-radius:40px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#4246dd;
+}
+
+section{
+
+    padding:100px 10%;
+
+}
+
+.title{
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+}
+
+.card{
+
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.skills{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+
+}
+
+.skill{
+
+padding:20px;
+background:white;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.projects{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+
+}
+
+.project{
+
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.project h3{
+margin-bottom:15px;
+}
+
+.project p{
+
+color:#555;
+line-height:1.7;
+
+}
+
+.project a{
+
+display:inline-block;
+margin-top:20px;
+text-decoration:none;
+color:#5b5ef7;
+font-weight:600;
+
+}
+
+.contact{
+
+text-align:center;
+
+}
+
+footer{
+
+padding:40px;
+text-align:center;
+background:white;
+margin-top:60px;
+
+}
+
+@media(max-width:900px){
+
+.hero{
+
+flex-direction:column-reverse;
+justify-content:center;
+text-align:center;
+gap:50px;
+
+}
+
+.hero-text{
+
+width:100%;
+
+}
+
+.hero img{
+
+width:250px;
+
+}
+
+.about{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<h2>DK.</h2>
+
+<ul>
+
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Hi, I'm Denise Kate 👋</h1>
+
+<h2>Computer Engineering Student</h2>
+
+<p>
+
+I'm a Computer Engineering student passionate about software development,
+UI design, and machine learning. I enjoy building practical applications
+that solve real-world problems while continuously learning new technologies.
+
+</p>
+
+<a href="#projects">
+<button>View My Projects</button>
+</a>
+
+</div>
+
+<img src="profile.jpg" alt="Profile">
+
+</section>
+
+<section id="about">
+
+<h1 class="title">About Me</h1>
+
+<div class="about">
+
+<div class="card">
+
+<h3>Who I Am</h3>
+
+<br>
+
+<p>
+
+I'm currently studying Computer Engineering and continuously improving my
+skills in Python, web development, and software engineering.
+
+My goal is to become a software engineer who creates useful and intuitive
+applications.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Education</h3>
+
+<br>
+
+<p>
+
+🏫 Mapúa University
+
+<br><br>
+
+Bachelor of Science in Computer Engineering
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h1 class="title">Skills</h1>
+
+<div class="skills">
+
+<div class="skill">
+<h3>Python</h3>
+</div>
+
+<div class="skill">
+<h3>HTML</h3>
+</div>
+
+<div class="skill">
+<h3>CSS</h3>
+</div>
+
+<div class="skill">
+<h3>JavaScript</h3>
+</div>
+
+<div class="skill">
+<h3>Git & GitHub</h3>
+</div>
+
+<div class="skill">
+<h3>TensorFlow</h3>
+</div>
+
+<div class="skill">
+<h3>Machine Learning</h3>
+</div>
+
+<div class="skill">
+<h3>SQL</h3>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h1 class="title">Projects</h1>
+
+<div class="projects">
+
+<div class="project">
+
+<h3>Grade Calculator</h3>
+
+<p>
+
+Desktop application developed using Python and CustomTkinter
+that computes General Weighted Average (GWA), manages school terms,
+and stores data using JSON.
+
+</p>
+
+<a href="#">GitHub →</a>
+
+</div>
+
+<div class="project">
+
+<h3>Plant Disease Detection</h3>
+
+<p>
+
+Deep learning application using Convolutional Neural Networks (CNN)
+to classify plant diseases from leaf images.
+
+</p>
+
+<a href="#">GitHub →</a>
+
+</div>
+
+<div class="project">
+
+<h3>Braille Learning Device</h3>
+
+<p>
+
+Research project using OCR, Raspberry Pi,
+speech synthesis, and a refreshable Braille display
+to assist visually impaired learners.
+
+</p>
+
+<a href="#">GitHub →</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h1 class="title">Let's Connect</h1>
+
+<p>
+
+Email:
+<br><br>
+
+your@email.com
+
+<br><br>
+
+GitHub:
+<br>
+
+https://github.com/yourusername
+
+<br><br>
+
+LinkedIn:
+<br>
+
+https://linkedin.com/in/yourusername
+
+</p>
+
+</section>
+
+<footer>
+
+Made with ❤️ by Denise Kate Pagala
+
+</footer>
+
+</body>
+</html>
