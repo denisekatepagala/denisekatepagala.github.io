@@ -1,0 +1,14 @@
+{
+    "terms": [],
+    "target": null,
+    "grades": [
+        {
+            "component": "QUIZ",
+            "percentage": 10
+        },
+        {
+            "component": "COURSEWORK",
+            "percentage": 90
+        }
+    ]
+}
