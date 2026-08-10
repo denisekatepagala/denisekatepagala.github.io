@@ -1,0 +1,75 @@
+{
+    "terms": [
+        {
+            "school_year": "2026-2027",
+            "term": "1Q",
+            "entries": [
+                {
+                    "course": "Math",
+                    "units": 3,
+                    "grade": 1.0
+                },
+                {
+                    "course": "Science",
+                    "units": 3,
+                    "grade": 2.25
+                }
+            ],
+            "gwa": 1.625
+        },
+        {
+            "school_year": "2025-2026",
+            "term": "3T",
+            "entries": [
+                {
+                    "course": "English",
+                    "units": 3,
+                    "grade": 5.0
+                },
+                {
+                    "course": "Calculus",
+                    "units": 3,
+                    "grade": 1.0
+                }
+            ],
+            "gwa": 3.0
+        }
+    ],
+    "target": 1.75,
+    "grades": [
+        {
+            "component": "QUIZ",
+            "percentage": 30,
+            "assessments": [
+                {
+                    "name": "QUIZ 1",
+                    "score": "10/10"
+                },
+                {
+                    "name": "QUIZ 2",
+                    "score": "8/10"
+                }
+            ]
+        },
+        {
+            "component": "COURSEWORKS",
+            "percentage": 30,
+            "assessments": [
+                {
+                    "name": "COURSEWORKS 1",
+                    "score": "10/10"
+                },
+                {
+                    "name": "COURSEWORKS 2",
+                    "score": "10/10"
+                }
+            ]
+        },
+        {
+            "component": "FINAL EXAM",
+            "percentage": 40,
+            "assessments": []
+        }
+    ],
+    "final_grade": 57.0
+}

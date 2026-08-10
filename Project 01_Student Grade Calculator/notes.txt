@@ -1,0 +1,48 @@
+# **************************************** NOTES ***************************************
+1. terms - The list currently shown on the Homepage.
+2. term - Just one item 
+    ex.:
+    terms = [
+        {
+            "school_year":"2025-2026",
+            "term":"1T",
+            ...
+        },
+        {
+            "school_year":"2025-2026",
+            "term":"2T",
+            ...
+        }
+    ]
+
+    term = 
+        {
+            "school_year":"2025-2026",
+            "term":"2T",
+            ...
+        }
+
+3. entries - this is part of my GUI not JSON like course_entry, units_entr, grade_entry
+4. courses - this is inside JSON/ list of dictionaries
+    ex.: Term = {
+        "school_year":"2025-2026",
+        "term":"1T",
+
+            "courses":[
+                {
+                    "course":"Physics",
+                    "units":3,
+                    "grade":1.75
+                },
+
+                {
+                    "course":"Math",
+                    "units":5,
+                    "grade":2.00
+                }
+            ]
+    }
+
+5. course - its just one subject lang basta similar to terms and term
+6. grade
+"""
